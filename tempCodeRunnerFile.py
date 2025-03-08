@@ -1,0 +1,10 @@
+plt.subplot(4, 1, 4)
+plt.plot(time_values, composite_signal, label='Composite Signal', color='purple')
+plt.title('Composite Signal (Sine + Step + Impulse)')
+plt.xlabel('Time [s]')
+plt.ylabel('Amplitude')
+plt.grid(True)
+plt.legend()
+
+plt.tight_layout()
+plt.show()

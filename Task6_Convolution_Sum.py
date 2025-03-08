@@ -8,6 +8,7 @@ h = [1, -1, 2,3]
 # Step 1: Folding
 h_folded = [0] * len(h) 
 
+
 for i in range(len(h)):
     h_folded[i] = h[len(h) - 1 - i]
 
@@ -51,12 +52,12 @@ plt.ylabel("Amplitude")
 plt.grid(True)
 
 # Plot the convolution sum signal y[n]
-plt.subplot(3, 1, 3)
-plt.stem(range(len(y)), y, basefmt="b")
-plt.title("Convolution Sum y[n]")
-plt.xlabel("n")
-plt.ylabel("Amplitude")
-plt.grid(True)
+# plt.subplot(3, 1, 3)
+# plt.stem(range(len(y)), y, basefmt="b")
+# plt.title("Convolution Sum y[n]")
+# plt.xlabel("n")
+# plt.ylabel("Amplitude")
+# plt.grid(True)
 
-plt.tight_layout()
-plt.show()
+# plt.tight_layout()
+plt.stem(x)

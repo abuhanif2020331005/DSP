@@ -1,5 +1,6 @@
 import math
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 def generate_sine_wave(amplitude, frequency, time_values):
@@ -24,8 +25,8 @@ num_points = 100
 t_start = -1            
 t_end = 2               
 
-time_values = [t_start + i * (t_end - t_start) / (num_points - 1) for i in range(num_points)]
-
+#time_values = [t_start + i * (t_end - t_start) / (num_points - 1) for i in range(num_points)]
+time_values=np.linspace(t_start,t_end,num_points)
 
 sine_wave = generate_sine_wave(amplitude_sine, frequency_sine, time_values)
 step_function = generate_step_function(time_values)
